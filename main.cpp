@@ -12,7 +12,7 @@ int main(){
         cout<<"--------------------------------------"<<endl;
         cout<<"|    Blood Bank Management System    |"<<endl;
         cout<<"--------------------------------------"<<endl;
-        cout<<"\nEnter your choice:\n\t1. Add New Donor\n\t2. Display Donor List\n\t3. Search for Donor\n\t4. Exit"<<endl;
+        cout<<"\nEnter your choice:\n\t1. Add New Donor\n\t2. Display Donor List\n\t3. Search for Donor\n\t4. Update Donor Details\n\t5. Exit"<<endl;
         cin>>ch;
 
         switch(ch) {
@@ -34,7 +34,15 @@ int main(){
             bb.bloodBank("Search for Donor");
         }
         break;
+
         case 4:
+        {
+            system("cls");
+            bb.bloodBank("Update Donor Details");
+        }
+        break;
+        
+        case 5:
         {
             return 0;
         }
