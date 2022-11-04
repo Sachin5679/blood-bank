@@ -13,14 +13,20 @@ private:
     string ownerName;
     string donationDate;
     string AadharNo;
+    string phnNo;
+    string email;
 public:
     void setOwnerName(string oName);
     void setDonationDate(string d);
     void setAadhar(string adhr);
+    void setPhone(string phone);
+    void setEmail(string Email);
     void setDonorID();
     string getOwnerName();
     string getDonationDate();
     string getAadhar();
+    string getPhone();
+    string getEmail();
     string getDonorID();
 };
 
@@ -34,6 +40,14 @@ void Donorcard::setAadhar(string adhr) {
 
 void Donorcard::setDonationDate(string d) {
     donationDate=d;
+}
+
+void Donorcard::setPhone(string phone){
+    phnNo=phone;
+}
+
+void Donorcard::setEmail(string Email){
+    email=Email;
 }
 
 void Donorcard::setDonorID() {
@@ -57,6 +71,14 @@ string Donorcard::getOwnerName() {
 
 string Donorcard::getAadhar() {
     return AadharNo;
+}
+
+string Donorcard::getPhone() {
+    return phnNo;
+}
+
+string Donorcard::getEmail() {
+    return email;
 }
 
 string Donorcard::getDonorID() {
